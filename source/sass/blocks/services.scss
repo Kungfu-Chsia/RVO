@@ -1,0 +1,50 @@
+.services {
+  margin-bottom: 150px;
+}
+
+.services h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.services__list {
+  @include list-style;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__list-item {
+  width: 267px;
+  min-height: 267px;
+  margin-bottom: 30px;
+  background-color: $color-bg-blue;
+  position: relative;
+
+  &:hover {
+    background-color: $color-white-blue;
+    box-shadow: 0 34px 12px -24px rgba(255, 170, 0, 1);
+    transition: 0.2s;
+  }
+}
+
+.services__list-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.services__list-item p {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: $color-dark-teal;
+}
+
+.services__list-item__icon-logo {
+  fill: $color-accent-orange;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(50%);
+}
+

@@ -15,13 +15,21 @@
 @import "global/utils";
 @import "global/container";
 
+
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/page-header";
-
-
+@import "blocks/promo";
+@import "blocks/services";
+@import "blocks/industries";
+@import "blocks/clients";
+@import "blocks/page-footer";
+@import "blocks/services-about";
+@import "blocks/about";
+@import "blocks/team";
+@import "blocks/contacts";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

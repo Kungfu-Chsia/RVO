@@ -1,0 +1,48 @@
+.industries {
+  background-color: $color-bg-blue;
+  margin-bottom: 150px;
+}
+
+.industries h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 180px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.industries__list {
+  @include list-style;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.industries__list li {
+  font-size: 30px;
+  line-height: 49px;
+  padding-left: 80px;
+  letter-spacing: 0.8px;
+  color: $color-dark-teal;
+  position: relative;
+  width: 50%;
+
+  &:nth-child(odd) {
+    border-right: 1px solid $color-hover;
+  }
+
+  &:nth-child(-n+4) {
+    border-bottom: 1px solid $color-hover;
+  }
+}
+
+.industries__list p::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 19px;
+  background: url("../img/svg/checkbox.svg") no-repeat center bottom;
+}

@@ -1,10 +1,10 @@
 const initSwiper = function () {
 
-  const swiper = new Swiper('.trainers__swiper', {
+  const swiper = new Swiper('.clients__swiper', {
 
     navigation: {
-      nextEl: '.trainers__button-next',
-      prevEl: '.trainers__button-prev',
+      nextEl: '.clients__button-next',
+      prevEl: '.clients__button-prev',
     },
 
     // отключение скролла
@@ -32,64 +32,64 @@ const initSwiper = function () {
         initialSlide: 0,
       },
       1366: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 40,
         initialSlide: 0,
       },
     },
   });
 
-  const swiperFeedback = new Swiper('.feedback__swiper', {
+  // const swiperFeedback = new Swiper('.feedback__swiper', {
 
-    navigation: {
-      prevEl: '.feedback__button-prev',
-      nextEl: '.feedback__button-next',
-    },
+  //   navigation: {
+  //     prevEl: '.feedback__button-prev',
+  //     nextEl: '.feedback__button-next',
+  //   },
 
-    loop: false,
-    simulateTouch: false,
-    slidesPerView: 1,
+  //   loop: false,
+  //   simulateTouch: false,
+  //   slidesPerView: 1,
 
-  });
+  // });
 
   const imageSlider = document.querySelector('.swiper').swiper;
-  const trainersButtonPrev = document.querySelector('.trainers__button-prev');
-  const trainersButtonNext = document.querySelector('.trainers__button-next');
-  const gamesBtn = document.querySelector('.games__btn');
-  const promoButton = document.querySelector('.promo__unlim-link');
-  const swiperSlides = document.querySelectorAll('.trainers__swiper-slide');
+  const clientsButtonPrev = document.querySelector('.clients__button-prev');
+  const clientsButtonNext = document.querySelector('.clients__button-next');
+  // const gamesBtn = document.querySelector('.games__btn');
+  // const promoButton = document.querySelector('.promo__unlim-link');
+  const swiperSlides = document.querySelectorAll('.clients__swiper-slide');
 
   const firstSlide = imageSlider.slides[0];
-  const lastSlide = imageSlider.slides[7];
+  const lastSlide = imageSlider.slides[3];
 
   swiperSlides.forEach(function (swiperSlide) {
     swiperSlide.tabIndex = '0';
   });
 
-  gamesBtn.addEventListener('keydown', function (evt) {
-    if (!evt.shiftKey && evt.key === 'Tab') {
-      evt.preventDefault();
-      trainersButtonPrev.focus();
-      console.log('gamesBtn',trainersButtonPrev);
-    }
-  });
+  // gamesBtn.addEventListener('keydown', function (evt) {
+  //   if (!evt.shiftKey && evt.key === 'Tab') {
+  //     evt.preventDefault();
+  //     clientsButtonPrev.focus();
+  //     console.log('gamesBtn',clientsButtonPrev);
+  //   }
+  // });
 
 
-  trainersButtonPrev.addEventListener('keydown', function (evt) {
+  clientsButtonPrev.addEventListener('keydown', function (evt) {
     if (evt.shiftKey && evt.key === 'Tab') {
       evt.preventDefault();
       gamesBtn.focus();
-      console.log('trainersButtonPrev',gamesBtn);
+      console.log('clientsButtonPrev',gamesBtn);
     }
   });
 
 
-  trainersButtonNext.addEventListener('keydown', function (evt) {
+  clientsButtonNext.addEventListener('keydown', function (evt) {
     if (!evt.shiftKey && evt.key === 'Tab') {
       evt.preventDefault();
       firstSlide.focus();
       imageSlider.slideTo(firstSlide.index, 800);
-      console.log('trainersButtonNext',firstSlide);
+      console.log('clientsButtonNext',firstSlide);
     }
   });
 
@@ -97,8 +97,8 @@ const initSwiper = function () {
   firstSlide.addEventListener('keydown', function (evt) {
     if (evt.shiftKey && evt.key === 'Tab') {
       evt.preventDefault();
-      trainersButtonNext.focus();
-      console.log('firstSlide',trainersButtonNext);
+      clientsButtonNext.focus();
+      console.log('firstSlide',clientsButtonNext);
     }
   });
 
@@ -110,13 +110,13 @@ const initSwiper = function () {
       console.log('lastSlide',promoButton);
     }
 
-    promoButton.addEventListener('keydown', function (event) {
-      if (event.shiftKey && event.key === 'Tab') {
-        event.preventDefault();
-        lastSlide.focus();
-        console.log('promoButton',lastSlide);
-      }
-    });
+    // promoButton.addEventListener('keydown', function (event) {
+    //   if (event.shiftKey && event.key === 'Tab') {
+    //     event.preventDefault();
+    //     lastSlide.focus();
+    //     console.log('promoButton',lastSlide);
+    //   }
+    // });
   });
 
 };

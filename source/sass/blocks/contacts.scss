@@ -1,0 +1,41 @@
+.contacts {
+  margin-top: 125px;
+}
+
+.contacts h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 60px;
+}
+
+.contacts p,
+.contacts__data a {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: start;
+  letter-spacing: 0.8px;
+  color: $color-dark-teal;
+}
+
+.contacts__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 150px;
+}
+
+.contacts__data {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contacts h4 {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: start;
+  letter-spacing: 0.8px;
+  color: #006363;
+  text-transform: uppercase;
+}

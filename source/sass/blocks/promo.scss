@@ -1,0 +1,31 @@
+.promo {
+  min-height: 927px;
+  background-image: url("../img/programming.png");
+  background-position: bottom;
+  background-color: $color-dark-teal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.promo__wrap h2 {
+  font-size: 60px;
+  line-height: 62px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $color-light-blue;
+  text-shadow: 11px 6px 5px rgb(0, 15, 22);
+  width: 50%;
+  position: absolute;
+  top: 20%;
+}
+
+.promo p {
+  font-size: 32px;
+  line-height: 46px;
+  color: $color-light-blue;
+  position: absolute;
+  top: 42%;
+  width: 50%;
+  text-shadow: 9px 7px 3px #000f16;
+}

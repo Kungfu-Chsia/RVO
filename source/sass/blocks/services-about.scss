@@ -1,0 +1,58 @@
+.services-about {
+  margin-bottom: 150px;
+  margin-top: 190px;
+}
+
+
+.services-about h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.services-about__list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-about__list-item {
+  min-height: 267px;
+  margin-bottom: 30px;
+  background-color: $color-bg-blue;
+  position: relative;
+
+  &:hover {
+    background-color: $color-white-blue;
+    box-shadow: 0 34px 12px -24px rgba(255, 170, 0, 1);
+    transition: 0.2s;
+  }
+}
+
+.services-about__list-item h4 {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: start;
+  letter-spacing: 0.8px;
+  color: $color-dark-teal;
+  text-transform: uppercase;
+  padding-left: 180px;
+}
+
+.services-about__list-item p {
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.8px;
+  color: $color-dark-teal;
+  text-align: start;
+  padding-left: 180px;
+  width: 90%;
+}
+
+.services-about__list-item__icon-logo {
+  fill: $color-accent-orange;
+  position: absolute;
+  left: 25px;
+  top: 13px;
+}

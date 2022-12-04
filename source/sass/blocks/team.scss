@@ -1,0 +1,50 @@
+.team__swiper {
+  display: flex;
+  width: 1160px;
+  margin-bottom: 150px;
+}
+
+.team h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+}
+
+.team__button {
+  position: absolute;
+  top: 1223px;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid $color-dark-teal;
+  border-style: solid solid none none;
+}
+
+
+.team__button-prev {
+  transform: rotate(225deg);
+  cursor: pointer;
+  left: 51px;
+
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.team__button-next {
+  transform: rotate(45deg);
+  cursor: pointer;
+  right: 51px;
+
+  &:hover {
+    opacity: 0.3;
+  }
+}
