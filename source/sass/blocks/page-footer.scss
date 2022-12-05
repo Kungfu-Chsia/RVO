@@ -30,7 +30,8 @@
   margin-left: 20px;
 
   &:hover {
-    color: $color-light-teal;
+    border-bottom: 2px solid $color-accent-orange;
+    transition: 0.4s;
     opacity: 1;
   }
 }

@@ -17,7 +17,16 @@
   text-shadow: 11px 6px 5px rgb(0, 15, 22);
   width: 50%;
   position: absolute;
-  top: 20%;
+  top: 22%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 4px;
+    top: -16%;
+    background-color: $color-accent-orange;
+  }
 }
 
 .promo p {

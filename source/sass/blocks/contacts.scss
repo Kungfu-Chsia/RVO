@@ -22,13 +22,25 @@
 .contacts__wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 150px;
 }
 
 .contacts__data {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 33.3%;
+  margin-bottom: 30px;
+}
+
+.contacts__details {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.contacts__wrap iframe {
+  border: 2px solid $color-accent-orange;
+  border-radius: 22%;
 }
 
 .contacts h4 {

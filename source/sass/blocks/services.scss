@@ -17,7 +17,7 @@
 
 .services__list-item {
   width: 267px;
-  min-height: 267px;
+  min-height: 330px;
   margin-bottom: 30px;
   background-color: $color-bg-blue;
   position: relative;
@@ -46,5 +46,9 @@
   position: absolute;
   bottom: 0;
   transform: translateX(50%);
+
+  &--up {
+    bottom: 10px;
+  }
 }
 

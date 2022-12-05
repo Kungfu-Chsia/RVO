@@ -8,8 +8,13 @@
   line-height: 36px;
   text-transform: uppercase;
   padding-top: 180px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   margin: 0;
+}
+
+.industries h3 + p {
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .industries__list {
@@ -28,13 +33,14 @@
   color: $color-dark-teal;
   position: relative;
   width: 50%;
+  border-bottom: 1px solid $color-hover;
 
   &:nth-child(odd) {
     border-right: 1px solid $color-hover;
   }
 
-  &:nth-child(-n+4) {
-    border-bottom: 1px solid $color-hover;
+  &:nth-last-child(-n+2) {
+    border-bottom: none;
   }
 }
 

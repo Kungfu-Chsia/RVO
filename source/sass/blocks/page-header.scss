@@ -51,8 +51,10 @@
   font-size: 20px;
 
   &:hover {
-    color: $color-hover;
+    // color: $color-hover;
     opacity: 1;
+    border-bottom: 2px solid $color-accent-orange;
+    transition: 0.4s;
   }
 }
 

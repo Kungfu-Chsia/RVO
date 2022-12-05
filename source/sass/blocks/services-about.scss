@@ -46,8 +46,21 @@
   letter-spacing: 0.8px;
   color: $color-dark-teal;
   text-align: start;
-  padding-left: 180px;
+  padding-left: 208px;
   width: 90%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid $color-accent-orange;
+    top: 12px;
+    left: 180px;
+  }
 }
 
 .services-about__list-item__icon-logo {
