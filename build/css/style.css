@@ -707,7 +707,7 @@ body {
   width: 100%;
   min-width: 320px;
   font-family: "Tahoma", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   color: #000f10;
@@ -951,6 +951,10 @@ button,
   background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.page-header--static {
+  position: static;
 }
 
 .page-header__logo {
@@ -1339,11 +1343,55 @@ button,
   margin-top: 190px;
 }
 
+.services-about--static {
+  margin-top: 60px;
+}
+
 .services-about h3 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   margin-top: 0;
+}
+
+.services-about__nav {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #1d7373;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.services-about__nav li {
+  color: #effafa;
+  letter-spacing: 0.8px;
+  width: 24.3%;
+  min-height: 100px;
+  background-color: #289d9d;
+  position: relative;
+}
+
+.services-about__nav li:hover {
+  opacity: 0.7;
+}
+
+.services-about__nav li p {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.services-about__nav-item svg {
+  position: absolute;
+  fill: #ffffff;
+  width: 32px;
+  height: 32px;
+  bottom: 10px;
 }
 
 .services-about__list {
@@ -1422,6 +1470,7 @@ button,
 
 .about__wrap {
   padding-bottom: 30px;
+  position: relative;
 }
 
 .about h3 {
@@ -1435,10 +1484,28 @@ button,
 .about p {
   font-size: 25px;
   line-height: 35px;
-  text-align: start;
+  text-align: justify;
   letter-spacing: 0.8px;
   color: #006363;
-  width: 80%;
+  width: 86%;
+}
+
+.about p:nth-last-child(-n+3) {
+  width: 50%;
+  position: relative;
+}
+
+.about p:last-child::after {
+  content: "";
+  position: absolute;
+  background: url("../img/web-development.png") no-repeat center center;
+  width: 512px;
+  height: 512px;
+  right: -333px;
+  -webkit-transform: translate(50%);
+  -ms-transform: translate(50%);
+  transform: translate(50%);
+  bottom: 81px;
 }
 
 .team__swiper {
@@ -1513,9 +1580,13 @@ button,
 .contacts__data a {
   font-size: 25px;
   line-height: 35px;
-  text-align: start;
+  text-align: justify;
   letter-spacing: 0.8px;
   color: #006363;
+}
+
+.contacts h3 ~ p {
+  margin-bottom: 55px;
 }
 
 .contacts__wrap {
@@ -1528,6 +1599,16 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 150px;
+  position: relative;
+}
+
+.contacts__wrap::before {
+  content: "";
+  position: absolute;
+  width: 181px;
+  height: 4px;
+  left: 0;
+  background-color: #ff7400;
 }
 
 .contacts__data {
@@ -1542,14 +1623,10 @@ button,
   margin-bottom: 30px;
 }
 
-.contacts__details {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
 .contacts__wrap iframe {
-  border: 2px solid #ff7400;
+  border: 3px solid #ff7400;
   border-radius: 22%;
+  margin-top: 100px;
 }
 
 .contacts h4 {
@@ -1559,6 +1636,7 @@ button,
   letter-spacing: 0.8px;
   color: #006363;
   text-transform: uppercase;
+  margin-top: 55px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-
+import './modules/scroll';
 import initSwiper from './modules/swiper';
 
 // ---------------------------------

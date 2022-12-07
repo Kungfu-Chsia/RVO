@@ -14,9 +14,13 @@
 .contacts__data a {
   font-size: 25px;
   line-height: 35px;
-  text-align: start;
+  text-align: justify;
   letter-spacing: 0.8px;
   color: $color-dark-teal;
+}
+
+.contacts h3 ~ p {
+  margin-bottom: 55px;
 }
 
 .contacts__wrap {
@@ -24,6 +28,16 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 150px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 181px;
+    height: 4px;
+    left: 0;
+    background-color: $color-accent-orange;
+  }
 }
 
 .contacts__data {
@@ -33,14 +47,10 @@
   margin-bottom: 30px;
 }
 
-.contacts__details {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
 .contacts__wrap iframe {
-  border: 2px solid $color-accent-orange;
+  border: 3px solid $color-accent-orange;
   border-radius: 22%;
+  margin-top: 100px;
 }
 
 .contacts h4 {
@@ -50,4 +60,6 @@
   letter-spacing: 0.8px;
   color: #006363;
   text-transform: uppercase;
+  margin-top: 55px;
 }
+

@@ -5,6 +5,7 @@
 
 .about__wrap {
   padding-bottom: 30px;
+  position: relative;
 }
 
 .about h3 {
@@ -18,8 +19,24 @@
 .about p {
   font-size: 25px;
   line-height: 35px;
-  text-align: start;
+  text-align: justify;
   letter-spacing: 0.8px;
   color: $color-dark-teal;
-  width: 80%;
+  width: 86%;
+
+  &:nth-last-child(-n+3) {
+    width: 50%;
+    position: relative;
+  }
+}
+
+.about p:last-child::after {
+  content: "";
+  position: absolute;
+  background: url("../img/web-development.png") no-repeat center center;
+  width: 512px;
+  height: 512px;
+  right: -333px;
+  transform: translate(50%);
+  bottom: 81px;
 }
