@@ -33,6 +33,7 @@
   color: $color-dark-teal;
   position: relative;
   width: 50%;
+  padding-right: 15px;
   border-bottom: 1px solid $color-hover;
 
   &:nth-child(odd) {
@@ -47,8 +48,9 @@
 .industries__list p::before {
   content: "";
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 37px;
+  height: 37px;
+  top: 37px;
   left: 19px;
   background: url("../img/svg/checkbox.svg") no-repeat center bottom;
 }

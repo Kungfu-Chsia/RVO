@@ -11,30 +11,30 @@ const initSwiper = function () {
     simulateTouch: false,
 
     // Бесконечная прокрутка
-    loop: true,
+    loop: false,
 
     breakpoints: {
       320: {
         // Количество слайдов на странице
         slidesPerView: 1,
         // порядковый номер первого слайда
-        initialSlide: 2,
+        initialSlide: 1,
       },
       768: {
         slidesPerView: 2,
         // Отступ между слайдами
         spaceBetween: 30,
-        initialSlide: 2,
+        initialSlide: 1,
       },
       1200: {
         slidesPerView: 3,
         spaceBetween: 40,
-        initialSlide: 0,
+        initialSlide: 1,
       },
       1366: {
         slidesPerView: 3,
         spaceBetween: 40,
-        initialSlide: 0,
+        initialSlide: 1,
       },
     },
   });
@@ -75,49 +75,50 @@ const initSwiper = function () {
   // });
 
 
-  clientsButtonPrev.addEventListener('keydown', function (evt) {
-    if (evt.shiftKey && evt.key === 'Tab') {
-      evt.preventDefault();
-      gamesBtn.focus();
-      console.log('clientsButtonPrev',gamesBtn);
+  // clientsButtonPrev.addEventListener('keydown', function (evt) {
+  //   if (evt.shiftKey && evt.key === 'Tab') {
+  //     evt.preventDefault();
+  //     gamesBtn.focus();
+  //     console.log('clientsButtonPrev',gamesBtn);
+  //   }
+  // });
+
+
+  clientsButtonNext.addEventListener('click', function (evt) {
+    if (imageSlider.isEnd) {
+     //  console.log("сработал end", imageSlider.isEnd);
+    //  evt.preventDefault();
+      //firstSlide.focus();
+    // imageSlider.slideTo(firstSlide.index, 800);
+      console.log('clientsButtonNext',imageSlider);
     }
   });
 
 
-  clientsButtonNext.addEventListener('keydown', function (evt) {
-    if (!evt.shiftKey && evt.key === 'Tab') {
-      evt.preventDefault();
-      firstSlide.focus();
-      imageSlider.slideTo(firstSlide.index, 800);
-      console.log('clientsButtonNext',firstSlide);
-    }
-  });
+  // firstSlide.addEventListener('keydown', function (evt) {
+  //   if (evt.shiftKey && evt.key === 'Tab') {
+  //     evt.preventDefault();
+  //     clientsButtonNext.focus();
+  //     console.log('firstSlide',clientsButtonNext);
+  //   }
+  // });
 
 
-  firstSlide.addEventListener('keydown', function (evt) {
-    if (evt.shiftKey && evt.key === 'Tab') {
-      evt.preventDefault();
-      clientsButtonNext.focus();
-      console.log('firstSlide',clientsButtonNext);
-    }
-  });
+  // lastSlide.addEventListener('keydown', function (evt) {
+  //   if (!evt.shiftKey && evt.key === 'Tab') {
+  //     evt.preventDefault();
+  //     lastSlide.focus();
+  //     console.log('lastSlide',lastSlide);
+  //   }
 
-
-  lastSlide.addEventListener('keydown', function (evt) {
-    if (!evt.shiftKey && evt.key === 'Tab') {
-      evt.preventDefault();
-      promoButton.focus();
-      console.log('lastSlide',promoButton);
-    }
-
-    // promoButton.addEventListener('keydown', function (event) {
-    //   if (event.shiftKey && event.key === 'Tab') {
-    //     event.preventDefault();
-    //     lastSlide.focus();
-    //     console.log('promoButton',lastSlide);
-    //   }
-    // });
-  });
+  //   // promoButton.addEventListener('keydown', function (event) {
+  //   //   if (event.shiftKey && event.key === 'Tab') {
+  //   //     event.preventDefault();
+  //   //     lastSlide.focus();
+  //   //     console.log('promoButton',lastSlide);
+  //   //   }
+  //   // });
+  // });
 
 };
 

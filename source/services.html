@@ -2,8 +2,8 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="РВО-Софт - IT-поддержка вашего бизнеса">
     <title>РВО-Софт</title>
     <link rel="preload" href="fonts/Tahoma-Regular.woff2" as="font" crossorigin>
@@ -19,7 +19,9 @@
       <div class="container page-header__wrapper">
         <nav class="page-header__nav">
           <a href="index.html" class="page-header__logo" aria-label="logo">
-            <img src="img/logo-teal.jpg" width="64" height="64" alt="Логотип компании">
+            <svg class="page-header__icon-logo" width="90" height="90">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
           </a>
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -53,43 +55,43 @@
         <ul class="services-about__nav">
           <li href="#comps" class="services-about__nav-item js-trigger">
             <p>обслуживание компьютеров</p>
-            <svg class="services__list-item__icon-logo" width="130" height="120">
+            <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
           </li>
           <li href="#servers" class="services-about__nav-item js-trigger">
             <p>обслуживание серверов</p>
-            <svg class="services__list-item__icon-logo" width="130" height="120">
+            <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
           </li>
           <li href="#tech" class="services-about__nav-item js-trigger">
             <p>обслуживание оргтехники</p>
-            <svg class="services__list-item__icon-logo" width="130" height="120">
+            <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
           </li>
           <li href="#site" class="services-about__nav-item js-trigger">
             <p>разработка сайтов</p>
-            <svg class="services__list-item__icon-logo" width="130" height="120">
+            <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
           </li>
           <li href="#mob" class="services-about__nav-item js-trigger">
             <p>разработка мобильных приложений (аудиогид)</p>
-            <svg class="services__list-item__icon-logo" width="130" height="120">
+            <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
           </li>
           <li href="#tour" class="services-about__nav-item js-trigger">
             <p>виртуальный 3d-тур</p>
-            <svg class="services__list-item__icon-logo" width="130" height="120">
+            <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
           </li>
           <li href="#1s" class="services-about__nav-item js-trigger">
             <p>услуги 1С</p>
-            <svg class="services__list-item__icon-logo" width="130" height="120">
+            <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
           </li>
@@ -117,21 +119,65 @@
               <use xlink:href="img/sprite/sprite.svg#server"></use>
             </svg>
             <h4>обслуживание серверов</h4>
+            <p>Обеспечение работоспособности серверной операционной системы.</p>
+            <p>Установка серверного оборудования и его настройка.</p>
+            <p>Устранение неполадок в работе серверов.</p>
+            <p>Мониторинг состояния серверов специализированным ПО.</p>
+            <p>Организация удалённого доступа.</p>
+            <p>Резервное копирование и восстановление данных с серверов.</p>
+            <p>Защита данных от внешних опасностей и вредоносных программ.</p>
+            <p>Управление правами пользователей рабочей локальной сети.</p>
+            <p>Организация на сервере функций почтового и файлового сервера.</p>
+            <p>Обеспечение контроля пользовательского трафика</p>
+            <p>Профилактическое обслуживание серверов.</p>
           </li>
           <li id="tech" class="services-about__list-item">
+            <svg class="services-about__list-item__icon-logo services-about__list-item__icon-logo--down" width="120" height="120">
+              <use xlink:href="img/sprite/sprite.svg#repair"></use>
+            </svg>
             <h4>обслуживание оргтехники</h4>
+            <p>Мониторинг состояния принтеров.</p>
+            <p>Настройка и подключение принтеров в локальную сеть.</p>
+            <p>Профилактические работы.</p>
+            <p>Закупка нового оборудования.</p>
           </li>
           <li id="site" class="services-about__list-item">
+            <svg class="services-about__list-item__icon-logo services-about__list-item__icon-logo--down" width="120" height="120">
+              <use xlink:href="img/sprite/sprite.svg#progr"></use>
+            </svg>
             <h4>разработка сайтов</h4>
+            <p>Лендинг</p>
+            <p>Сайты с уникальным дизайном .</p>
+            <p>Сайты на основе шаблона.</p>
+            <p>Корпоративные сайты.</p>
           </li>
           <li id="mob" class="services-about__list-item">
+            <svg class="services-about__list-item__icon-logo services-about__list-item__icon-logo--down" width="120" height="120">
+              <use xlink:href="img/sprite/sprite.svg#mobile"></use>
+            </svg>
             <h4>разработка мобильных приложений (аудиогид)</h4>
+            <p>Подготовительный этап. Проектирование, разработка технического задания.</p>
+            <p>Дизайн. Разработка интерфейса мобильного приложения и графических элементов.</p>
+            <p>Подготовка к разработке. Подбор и начальная настройка необходимых компонентов будущего приложения.</p>
+            <p>MVP версия. Минимально жизнеспособная версия проекта, для внутреннего тестирования.</p>
+            <p>Разработка. Реализация полноценной версии проекта, отладка, тестирование.</p>
+            <p>Публикация. Размещение приложения в магазинах App Store и Google Play.</p>
           </li>
           <li id="tour" class="services-about__list-item">
+            <svg class="services-about__list-item__icon-logo" width="120" height="120">
+              <use xlink:href="img/sprite/sprite.svg#3d"></use>
+            </svg>
             <h4>виртуальный 3d-тур</h4>
+            <p>3D-тур полезно дополняет сайт, создаёт эффект присутствия, предоставляет возможность показать интерьеры вашего бизнеса, что делает
+              ваше заведение более красочным, привлекательным и интересным.</p>
+            <p>Виртуальный тур работает на любом устройстве (на экранах компьютера, планшета, мобильного телефона).</p>
           </li>
           <li id="1s" class="services-about__list-item">
+            <svg class="services-about__list-item__icon-logo services-about__list-item__icon-logo--up" width="120" height="120">
+              <use xlink:href="img/sprite/sprite.svg#1c"></use>
+            </svg>
             <h4>услуги 1С</h4>
+            <p>Комплекс услуг по поддержке и доработке программных продуктов на платформе 1С.</p>
           </li>
         </ul>
       </section>
@@ -139,21 +185,23 @@
 
     <footer class="page-footer">
       <h3 class="visually-hidden">Навигация</h3>
-      <a class="page-footer__logo">
-        <img src="img/logo-black.png" width="80" height="80" alt="Логотип компании">
+      <a href="index.html" class="page-footer__logo">
+        <svg class="page-footer__icon-logo" width="90" height="90">
+          <use xlink:href="img/sprite/sprite.svg#logo"></use>
+        </svg>
       </a>
       <ul class="page-footer__nav-list">
         <li>
-          <a href="">Услуги</a>
+          <a href="about.html">О компании</a>
         </li>
         <li>
-          <a href="">Наши работы</a>
+          <a href="services.html">Услуги</a>
         </li>
         <li>
-          <a href="">О компании</a>
+          <a href="cases.html">Портфолио</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <p>©РВО-Софт 2022</p>

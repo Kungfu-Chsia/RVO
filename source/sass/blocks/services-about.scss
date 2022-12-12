@@ -40,6 +40,7 @@
 .services-about__nav li p {
   margin-top: 10px;
   padding-left: 15px;
+  margin-bottom: 42px;
 }
 
 .services-about__nav-item svg {
@@ -48,6 +49,7 @@
   width: 32px;
   height: 32px;
   bottom: 10px;
+  left: 13px;
 }
 
 .services-about__list {
@@ -107,4 +109,12 @@
   position: absolute;
   left: 25px;
   top: 13px;
+
+  &--down {
+    top: 24px;
+  }
+
+  &--up {
+    top: 0;
+  }
 }

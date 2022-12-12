@@ -2,8 +2,8 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="РВО-Софт - IT-поддержка вашего бизнеса">
     <title>РВО-Софт</title>
     <link rel="preload" href="fonts/Tahoma-Regular.woff2" as="font" crossorigin>
@@ -19,7 +19,9 @@
       <div class="container page-header__wrapper">
         <nav class="page-header__nav">
           <a href="index.html" class="page-header__logo" aria-label="logo">
-            <img src="img/logo-teal.jpg" width="64" height="64" alt="Логотип компании">
+            <svg class="page-header__icon-logo" width="90" height="90">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
           </a>
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -79,6 +81,18 @@
               <li>
                 <p>Ритейлерские сети</p>
               </li>
+              <li>
+                <p>Образование, культура</p>
+              </li>
+              <li>
+                <p>Туризм (музеи, гостиницы)</p>
+              </li>
+              <li>
+                <p>Здравоохранение (медицинские центры, салоны красоты, фитнес-центры)</p>
+              </li>
+              <li>
+                <p>Ресторанный бизнес</p>
+              </li>
             </ul>
           </div>
         </section>
@@ -134,31 +148,31 @@
         <section class="clients container">
           <h3>нам доверяют</h3>
           <div class="clients__swiper swiper image-slider">
-            <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+            <div class="image-slider__wrapper swiper-wrapper ">
               <div class="clients__swiper-slide image-slider__slide swiper-slide" tabindex="0">
                 <div class="clients__card">
-                  <img src="img/merenga.png" srcset="img/merenga@2x.png 2x" alt="фото клиента" width="158" height="150"/>
+                  <img src="img/parus.png" srcset="img/parus@2x.png 2x" alt="фото клиента" width="250" height="250">
                 </div>
               </div>
             </div>
-            <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+            <div class="image-slider__wrapper swiper-wrapper ">
               <div class="clients__swiper-slide image-slider__slide swiper-slide" tabindex="0">
                 <div class="clients__card">
-                  <img src="img/parus.png" srcset="img/parus@2x.png 2x" alt="фото клиента" width="199" height="126"/>
+                  <img src="img/pryanik.png" srcset="img/pryanik.png 2x" alt="фото клиента" width="250" height="250">
                 </div>
               </div>
             </div>
-            <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+            <div class="image-slider__wrapper swiper-wrapper ">
               <div class="clients__swiper-slide image-slider__slide swiper-slide" tabindex="0">
                 <div class="clients__card">
-                  <img src="img/pryanik.png" srcset="img/pryanik.png 2x" alt="фото клиента" width="152" height="150"/>
+                  <img src="img/merenga.png" srcset="img/merenga@2x.png 2x" alt="фото клиента" width="250" height="250">
                 </div>
               </div>
             </div>
-            <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+            <div class="image-slider__wrapper swiper-wrapper ">
               <div class="clients__swiper-slide image-slider__slide swiper-slide" tabindex="0">
                 <div class="clients__card">
-                  <img src="img/textil.png" srcset="img/textil@2x.png 2x" alt="фото клиента" width="399" height="55"/>
+                  <img src="img/textil.png" srcset="img/textil@2x.png 2x" alt="фото клиента" width="250" height="250">
                 </div>
               </div>
             </div>
@@ -172,20 +186,22 @@
     <footer class="page-footer">
       <h3 class="visually-hidden">Навигация</h3>
       <a href="index.html" class="page-footer__logo">
-        <img src="img/logo-black.png" width="80" height="80" alt="Логотип компании">
+        <svg class="page-footer__icon-logo" width="90" height="90">
+          <use xlink:href="img/sprite/sprite.svg#logo"></use>
+        </svg>
       </a>
       <ul class="page-footer__nav-list">
         <li>
-          <a href="">Услуги</a>
+          <a href="about.html">О компании</a>
         </li>
         <li>
-          <a href="">Наши работы</a>
+          <a href="services.html">Услуги</a>
         </li>
         <li>
-          <a href="">О компании</a>
+          <a href="cases.html">Портфолио</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <p>©РВО-Софт 2022</p>

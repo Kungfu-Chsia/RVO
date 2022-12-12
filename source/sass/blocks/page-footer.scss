@@ -11,6 +11,10 @@
   margin-bottom: 40px;
 }
 
+.page-footer__logo svg {
+  fill: $color-main-font;
+}
+
 .page-footer__nav-list {
   @include list-style;
   display: flex;

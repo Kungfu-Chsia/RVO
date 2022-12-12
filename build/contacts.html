@@ -2,8 +2,8 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="РВО-Софт - IT-поддержка вашего бизнеса">
     <title>РВО-Софт</title>
     <link rel="preload" href="fonts/Tahoma-Regular.woff2" as="font" crossorigin>
@@ -19,7 +19,9 @@
       <div class="container page-header__wrapper">
         <nav class="page-header__nav">
           <a href="index.html" class="page-header__logo" aria-label="logo">
-            <img src="img/logo-teal.jpg" width="64" height="64" alt="Логотип компании">
+            <svg class="page-header__icon-logo" width="90" height="90">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
           </a>
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -48,46 +50,54 @@
     </header>
 
     <main>
-      <section class="contacts container">
-        <h3>Контактные данные</h3>
-        <p>Обратитесь к нашим специалистам и получите профессиональную консультацию по услугам.</p>
-        <p>Вы можете обратиться к нам по телефону, по электронной почте или договориться о встрече в нашем офисе. Будем рады помочь вам и ответить на все ваши вопросы.</p>
-        <div class="contacts__wrap">
-          <div class="contacts__data">
-            <h4>Телефоны:</h4>
-            <a class="page-header__phone" href="tel:84942461482" aria-label="телефон РВО-Софт">8(4942) 46-14-82</a>
-            <a class="page-header__phone" href="tel:84942420182" aria-label="телефон РВО-Софт">8(4942) 42-01-82</a>
-          </div>
-          <div class="contacts__data">
-            <h4>Электронная почта:</h4>
-            <a href="mailto:edu@rvo-k.ru" aria-label="почта РВО-Софт">edu@rvo-k.ru</a>
-          </div>
-          <div class="contacts__data">
-            <h4>Сайт:</h4>
-            <a href="https://rvo-k.ru/" aria-label="почта РВО-Софт">https://rvo-k.ru/</a>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2128.536901154727!2d40.99581051575927!3d57.758287081136956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ad4e337401ebdd%3A0xfbc15c825d8f6280!2z0YPQuy4g0J_QtdGC0YDQsCDQqdC10YDQsdC40L3RiywgOSwg0JrQvtGB0YLRgNC-0LzQsCwg0JrQvtGB0YLRgNC-0LzRgdC60LDRjyDQvtCx0LsuLCAxNTYwMTk!5e0!3m2!1sru!2sru!4v1670149025210!5m2!1sru!2sru" width="400" height="400"  allowfullscreen=""  title="г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h1 class="visually hidden">Наши Контакты</h1>
+      <section class="contacts">
+        <div class="container">
+          <h3>Контактные данные</h3>
+          <p>Обратитесь к нашим специалистам и получите профессиональную консультацию по услугам.</p>
+          <p>Вы можете обратиться к нам по телефону, по электронной почте или договориться о встрече в нашем офисе. Будем рады помочь вам и ответить на все ваши вопросы.</p>
         </div>
+        <div class="contacts__wrap">
+          <div class="contacts__data-wrap">
+            <div class="contacts__data">
+              <h4>Телефоны:</h4>
+              <a href="tel:84942461482" aria-label="телефон РВО-Софт">8(4942) 46-14-82</a>
+              <a href="tel:84942420182" aria-label="телефон РВО-Софт">8(4942) 42-01-82</a>
+            </div>
+            <div class="contacts__data">
+              <h4>Электронная почта:</h4>
+              <a href="mailto:edu@rvo-k.ru" aria-label="почта РВО-Софт">edu@rvo-k.ru</a>
+            </div>
+            <div class="contacts__data">
+              <h4>Сайт:</h4>
+              <a href="https://rvo-k.ru/" aria-label="почта РВО-Софт">https://rvo-k.ru/</a>
+            </div>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2128.536901154727!2d40.99581051575927!3d57.758287081136956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ad4e337401ebdd%3A0xfbc15c825d8f6280!2z0YPQuy4g0J_QtdGC0YDQsCDQqdC10YDQsdC40L3RiywgOSwg0JrQvtGB0YLRgNC-0LzQsCwg0JrQvtGB0YLRgNC-0LzRgdC60LDRjyDQvtCx0LsuLCAxNTYwMTk!5e0!3m2!1sru!2sru!4v1670149025210!5m2!1sru!2sru" width="100%" height="520"  allowfullscreen=""  title="РВО-Софт, г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
       </section>
     </main>
 
     <footer class="page-footer">
       <h3 class="visually-hidden">Навигация</h3>
       <a href="index.html" class="page-footer__logo">
-        <img src="img/logo-black.png" width="80" height="80" alt="Логотип компании">
+        <svg class="page-footer__icon-logo" width="90" height="90">
+          <use xlink:href="img/sprite/sprite.svg#logo"></use>
+        </svg>
       </a>
       <ul class="page-footer__nav-list">
         <li>
-          <a href="">Услуги</a>
+          <a href="about.html">О компании</a>
         </li>
         <li>
-          <a href="">Наши работы</a>
+          <a href="services.html">Услуги</a>
         </li>
         <li>
-          <a href="">О компании</a>
+          <a href="cases.html">Портфолио</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <p>©РВО-Софт 2022</p>

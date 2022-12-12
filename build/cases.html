@@ -2,8 +2,8 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="РВО-Софт - IT-поддержка вашего бизнеса">
     <title>РВО-Софт</title>
     <link rel="preload" href="fonts/Tahoma-Regular.woff2" as="font" crossorigin>
@@ -15,11 +15,13 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--static">
       <div class="container page-header__wrapper">
         <nav class="page-header__nav">
           <a href="index.html" class="page-header__logo" aria-label="logo">
-            <img src="img/logo-teal.jpg" width="64" height="64" alt="Логотип компании">
+            <svg class="page-header__icon-logo" width="90" height="90">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
           </a>
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -48,26 +50,199 @@
     </header>
 
     <main>
+      <h1 class="visually hidden">примеры наших работ</h1>
+      <section class="cases">
+        <div class="container">
+        <h2>Портфолио</h2>
+          <ul class="cases__list">
+            <li class="cases__list-item cases__list-item--gorizont">
+              <div class="cases__list-item-wrap">
+                <div class="cases__list-item-card">
+                  <img src="img/ekf-shot-d.jpg" srcset="img/ekf-shot-d@2x.jpg 2x" alt="фото шапки сайта ЭКФ" width="400" height="210">
+                </div>
+                <div class="cases__list-item-details">
+                  <h4>Сайт "Энциклопедия костромского фольклора"</h4>
+                  <a href="#ekf" class="js-trigger">Подробнее
+                    <svg class="cases__list-item-details-icon-logo" width="36" height="36">
+                      <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="cases__list-item cases__list-item--gorizont">
+              <div class="cases__list-item-wrap">
+                <div class="cases__list-item-card">
+                  <img src="img/tour-shot-d.png" srcset="img/tour-shot-d@2x.png 2x" alt="фото входной группы в музей" width="400" height="214">
+                </div>
+                <div class="cases__list-item-details">
+                  <h4>3d-тур по музею "Костромской Дом Национальностей"</h4>
+                  <a href="#tour" class="js-trigger">Подробнее
+                    <svg class="cases__list-item-details-icon-logo" width="36" height="36">
+                      <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="cases__list-item cases__list-item--gorizont">
+              <div class="cases__list-item-wrap">
+                <div class="cases__list-item-card">
+                  <img src="img/dt-1-d.png" srcset="img/dt-1-d@2x.png 2x" alt="фото вестибюля дворца творчества" width="400" height="214">
+                </div>
+                <div class="cases__list-item-details">
+                  <h4>интерактивная экскурсия по ГБУ «Дворец творчества»</h4>
+                  <a href="#palace" class="js-trigger">Подробнее
+                    <svg class="cases__list-item-details-icon-logo" width="36" height="36">
+                      <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li href="#guide" class="cases__list-item">
+              <div class="cases__list-item-wrap">
+                <div class="cases__list-item-card">
+                  <img src="img/guide-shot-d.jpg" srcset="img/guide-shot-d@2x.jpg 2x" alt="фото мобильного приложения" width="180" height="400">
+                </div>
+                <div class="cases__list-item-details cases__list-item-details--vert">
+                  <h4>Мобильное приложение для музея "Костромской Дом Национальностей"</h4>
+                  <p>Приложение с аудиогидом</p>
+                  <a href="#guide" class="js-trigger">Подробнее
+                    <svg class="cases__list-item-details-icon-logo" width="36" height="36">
+                      <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
 
+          </ul>
+        </div>
+      </section>
+
+      <section class="details container">
+        <ul class="details__list">
+          <li  class="details__list-item">
+            <div class="details__list-item-wrap">
+              <h3 id="ekf">Сайт "Энциклопедия костромского фольклора"</h3>
+              <img  src="img/ekf-long-d.jpg" srcset="img/ekf-long-d@2x.jpg 2x" alt="фото главной страницы сайта ЭКФ" width="700" height="964">
+            </div>
+            <div class="details__list-item-info">
+              <a href="http://экф-44.рф/">http://экф-44.рф</a>
+              <p>Местонахождение г.Кострома</p>
+              <h4>Технические особенности сайта:</h4>
+              <ul class="details__list-description">
+                <li>
+                  <p>адаптация сайта к работе на мобильных устройствах</p>
+                </li>
+                <li>
+                  <p>интерактивная карта</p>
+                </li>
+                <li>
+                  <p>поиск фольклора по различным критериям</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="details__list-item">
+            <div class="details__list-item-wrap">
+              <h3 id="tour">3d-тур по музею "Костромской Дом Национальностей"</h3>
+              <img src="img/tour-1-d.png" srcset="img/tour-1-d@2x.png 2x" alt="фото главного зала музея" width="700" height="964">
+              <img src="img/tour-2-d.png" srcset="img/tour-2-d@2x.png 2x" alt="крупное фото национальных костюмов" width="700" height="964">
+              <img src="img/tour-3-d.png" srcset="img/tour-3-d@2x.png 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+            </div>
+            <div class="details__list-item-info">
+              <a href="http://tour.rvo-k.ru/museum_of_nations/">http://tour.rvo-k.ru</a>
+              <p>Местонахождение г.Кострома</p>
+              <h4>Технические особенности 3d-тура:</h4>
+              <ul class="details__list-description">
+                <li>
+                  <p>детальные фото костюмов</p>
+                </li>
+                <li>
+                  <p>голосовое сопровождение описаниия костюмов</p>
+                </li>
+                <li>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="details__list-item">
+            <div class="details__list-item-wrap details__list-item-wrap--guide">
+              <h3 id="guide">Мобильное приложение для музея "Костромской Дом Национальностей"</h3>
+              <img src="img/guide-1-d.jpg" srcset="img/guide-1-d@2x.jpg 2x" alt="фото главного зала музея" width="700" height="964">
+              <img src="img/guide-2-d.jpg" srcset="img/guide-2-d@2x.jpg 2x" alt="крупное фото национальных костюмов" width="350" height="964">
+              <img src="img/guide-3-d.jpg" srcset="img/guide-3-d@2x.jpg 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+              <img src="img/guide-4-d.jpg" srcset="img/guide-4-d@2x.jpg 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+            </div>
+            <div class="details__list-item-info details__list-item-info--guide ">
+              <a href="https://play.google.com/store/apps/details?id=com.rvo.museumskostroma">https://play.google.com</a>
+              <p>Местонахождение г.Кострома</p>
+              <h4>Технические особенности приложения:</h4>
+              <ul class="details__list-description">
+                <li>
+                  <p>аудиогид</p>
+                </li>
+                <li>
+                  <p>голосовое сопровождение описаниия костюмов</p>
+                </li>
+                <li>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="details__list-item">
+            <div class="details__list-item-wrap">
+              <h3 id="palace">3d-тур по ГБУ «Дворец творчества»</h3>
+              <img src="img/dt-2-d.png" srcset="img/dt-2-d@2x.png 2x" alt="фото главного зала музея" width="700" height="964">
+              <img src="img/dt-3-d.png" srcset="img/dt-3-d@2x.png 2x" alt="крупное фото национальных костюмов" width="700" height="964">
+              <img src="img/dt-4-d.png" srcset="img/4-d@2x.png 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+            </div>
+            <div class="details__list-item-info">
+              <a href="http://kodtdim.ru/">http://kodtdim.ru</a>
+              <p>Местонахождение г.Кострома</p>
+              <h4>Технические особенности 3d-тура:</h4>
+              <ul class="details__list-description">
+                <li>
+                  <p>переход на любой слайд</p>
+                </li>
+                <li>
+                  <p>карта-схема залов Дворца творчества</p>
+                </li>
+                <li>
+                  <p>стереографическое изображение</p>
+                </li>
+                <li>
+                  <p>старт автопрокрутки</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </section>
     </main>
 
     <footer class="page-footer">
       <h3 class="visually-hidden">Навигация</h3>
       <a href="index.html" class="page-footer__logo">
-        <img src="img/logo-black.png" width="80" height="80" alt="Логотип компании">
+        <svg class="page-footer__icon-logo" width="90" height="90">
+          <use xlink:href="img/sprite/sprite.svg#logo"></use>
+        </svg>
       </a>
       <ul class="page-footer__nav-list">
         <li>
-          <a href="">Услуги</a>
+          <a href="about.html">О компании</a>
         </li>
         <li>
-          <a href="">Наши работы</a>
+          <a href="services.html">Услуги</a>
         </li>
         <li>
-          <a href="">О компании</a>
+          <a href="cases.html">Портфолио</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <p>©РВО-Софт 2022</p>

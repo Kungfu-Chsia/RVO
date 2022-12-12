@@ -1,0 +1,102 @@
+.cases {
+  background-color: $color-white-blue;
+}
+
+.cases h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 64px;
+}
+
+.cases__list {
+  @include list-style;
+  display: block;
+  column-count: 2;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.cases__list-item {
+  width: 400px;
+  min-height: 195px;
+  box-shadow: 3px 15px 15px 5px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  margin: 0 auto 68px;
+
+  &--gorizont {
+    width: 450px;
+    height: 250px;
+  }
+}
+
+.cases__list-item-card img {
+  border-radius: 10px;
+  min-height: 250px;
+}
+
+.cases__list-item-wrap {
+  position: relative;
+
+  &:hover .cases__list-item-details {
+    display: block;
+  }
+}
+
+.cases__list-item-details {
+  background-color: rgba(0, 15, 16, 0.6);
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  padding: 0 25px;
+  height: 250px;
+  display: none;
+
+  &--vert {
+    height: 889px;
+    justify-content: center;
+    padding-top: 271px;
+  }
+}
+
+.cases__list-item-details h4 {
+  color: $color-white-blue;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.cases__list-item-details p {
+  color: $color-white-blue;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.cases__list-item-details a {
+  color: $color-white-blue;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  position: relative;
+  padding-left: 42px;
+  width: 170px;
+  padding-bottom: 7px;
+
+  &:hover {
+    opacity: 1;
+    border-bottom: 2px solid $color-accent-orange;
+    transition: 0.4s;
+  }
+}
+
+.cases__list-item-details-icon-logo {
+  fill: $color-white-blue;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
