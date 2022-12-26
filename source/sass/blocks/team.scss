@@ -1,7 +1,26 @@
+.team {
+  position: relative;
+  display: none;
+}
+
 .team__swiper {
   display: flex;
   width: 1160px;
   margin-bottom: 150px;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    width: 860px;
+  }
+
+  @media (max-width: $desktop-width) {
+    max-width: 566px;
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 150px;
+    max-width: 100%;
+  }
 }
 
 .team h3 {
@@ -20,7 +39,7 @@
 
 .team__button {
   position: absolute;
-  top: 1223px;
+  top: 219px;
   width: 23px;
   height: 23px;
   background-color: transparent;
@@ -37,6 +56,13 @@
   &:hover {
     opacity: 0.3;
   }
+
+  @media (max-width: $tablet-width) {
+    bottom: 131px;
+    left: 23px;
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .team__button-next {
@@ -47,4 +73,22 @@
   &:hover {
     opacity: 0.3;
   }
+
+  @media (max-width: $tablet-width) {
+    bottom: 131px;
+    right: 23px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__card h4,
+.team__card p {
+  color: $color-dark-teal;
 }

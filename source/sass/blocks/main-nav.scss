@@ -1,0 +1,13 @@
+.main-nav__toggle {
+  @media (max-width: 767px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 61px;
+    height: 65px;
+    cursor: pointer;
+    border: none;
+    background-color: $color-white-blue;
+  }
+}

@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="РВО-Софт - IT-поддержка вашего бизнеса">
-    <title>РВО-Софт</title>
+    <meta name="description" content="РВО софт - IT-поддержка вашего бизнеса">
+    <title>РВО софт</title>
     <link rel="preload" href="fonts/Tahoma-Regular.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/Tahoma-Bold.woff2" as="font" crossorigin>
     <link rel="icon" href="favicon.ico">
@@ -15,39 +15,44 @@
   </head>
 
   <body>
-    <header class="page-header page-header--static">
-      <div class="container page-header__wrapper">
-        <nav class="page-header__nav">
-          <a href="index.html" class="page-header__logo" aria-label="logo">
-            <svg class="page-header__icon-logo" width="90" height="90">
-              <use xlink:href="img/sprite/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a href="about.html">О компании</a>
+    <header class="page-header page-header--static page-header--closed">
+      <div class="page-header__wrap">
+        <div class="container page-header__wrapper">
+          <nav class="page-header__nav main-nav ">
+            <a href="index.html" class="page-header__logo" aria-label="logo">
+              <svg class="page-header__icon-logo" width="120" height="120">
+                <use xlink:href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="page-header__toggle main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a href="about.html">О компании</a>
+              </li>
+              <li class="page-header__item">
+                <a href="services.html">Услуги</a>
+              </li>
+              <li class="page-header__item">
+                <a href="cases.html">Портфолио</a>
+              </li>
+              <li class="page-header__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-header__list-contacts">
+            <li>
+              <a class="page-header__phone" href="tel:84942461482" aria-label="телефон РВО софт">8 (4942) 46-14-82</a>
             </li>
-            <li class="page-header__item">
-              <a href="services.html">Услуги</a>
-            </li>
-            <li class="page-header__item">
-              <a href="cases.html">Портфолио</a>
-            </li>
-            <li class="page-header__item">
-              <a href="contacts.html">Контакты</a>
+            <li>
+              <a class="page-header__phone" href="tel:84942420182" aria-label="телефон РВО софт">8 (4942) 42-01-82</a>
             </li>
           </ul>
-        </nav>
-        <ul class="page-header__list-contacts">
-          <li>
-            <a class="page-header__phone" href="tel:84942461482" aria-label="телефон РВО-Софт">8 (4942) 46-14-82</a>
-          </li>
-          <li>
-            <a class="page-header__phone" href="tel:84942420182" aria-label="телефон РВО-Софт">8 (4942) 42-01-82</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
+
 
     <main>
       <h1 class="visually hidden">примеры наших работ</h1>
@@ -58,7 +63,12 @@
             <li class="cases__list-item cases__list-item--gorizont">
               <div class="cases__list-item-wrap">
                 <div class="cases__list-item-card">
-                  <img src="img/ekf-shot-d.jpg" srcset="img/ekf-shot-d@2x.jpg 2x" alt="фото шапки сайта ЭКФ" width="400" height="210">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/ekf-shot-d.webp 1x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/ekf-shot-d.webp 1x">
+                    <source type="image/webp" srcset="img/ekf-shot-d.webp 1x">
+                    <img src="img/ekf-shot-d.jpg" srcset="img/ekf-shot-d@2x.jpg 2x" alt="фото шапки сайта ЭКФ" width="400" height="210">
+                  </picture>
                 </div>
                 <div class="cases__list-item-details">
                   <h4>Сайт "Энциклопедия костромского фольклора"</h4>
@@ -73,7 +83,12 @@
             <li class="cases__list-item cases__list-item--gorizont">
               <div class="cases__list-item-wrap">
                 <div class="cases__list-item-card">
-                  <img src="img/tour-shot-d.png" srcset="img/tour-shot-d@2x.png 2x" alt="фото входной группы в музей" width="400" height="214">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/tour-shot-d.webp 1x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-shot-d.webp 1x">
+                    <source type="image/webp" srcset="img/tour-shot-d.webp 1x">
+                    <img src="img/tour-shot-d.png" srcset="img/tour-shot-d@2x.png 2x" alt="фото входной группы в музей" width="400" height="214">
+                  </picture>
                 </div>
                 <div class="cases__list-item-details">
                   <h4>3d-тур по музею "Костромской Дом Национальностей"</h4>
@@ -88,7 +103,12 @@
             <li class="cases__list-item cases__list-item--gorizont">
               <div class="cases__list-item-wrap">
                 <div class="cases__list-item-card">
-                  <img src="img/dt-1-d.png" srcset="img/dt-1-d@2x.png 2x" alt="фото вестибюля дворца творчества" width="400" height="214">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/dt-1-d.webp 1x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/dt-1-d.webp 1x">
+                    <source type="image/webp" srcset="img/dt-1-d.webp 1x">
+                    <img src="img/dt-1-d.png" srcset="img/dt-1-d@2x.png 2x" alt="фото вестибюля дворца творчества" width="400" height="214">
+                  </picture>
                 </div>
                 <div class="cases__list-item-details">
                   <h4>интерактивная экскурсия по ГБУ «Дворец творчества»</h4>
@@ -103,7 +123,12 @@
             <li href="#guide" class="cases__list-item">
               <div class="cases__list-item-wrap">
                 <div class="cases__list-item-card">
-                  <img src="img/guide-shot-d.jpg" srcset="img/guide-shot-d@2x.jpg 2x" alt="фото мобильного приложения" width="180" height="400">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/guide-shot-d.webp 1x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/guide-shot-d.webp 1x">
+                    <source type="image/webp" srcset="img/guide-shot-d.webp 1x">
+                    <img src="img/guide-shot-d.jpg" srcset="img/guide-shot-d@2x.jpg 2x" alt="фото мобильного приложения" width="180" height="400">
+                  </picture>
                 </div>
                 <div class="cases__list-item-details cases__list-item-details--vert">
                   <h4>Мобильное приложение для музея "Костромской Дом Национальностей"</h4>
@@ -126,11 +151,17 @@
           <li  class="details__list-item">
             <div class="details__list-item-wrap">
               <h3 id="ekf">Сайт "Энциклопедия костромского фольклора"</h3>
-              <img  src="img/ekf-long-d.jpg" srcset="img/ekf-long-d@2x.jpg 2x" alt="фото главной страницы сайта ЭКФ" width="700" height="964">
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/ekf-long-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/ekf-long-d.webp 1x">
+                <source type="image/webp" srcset="img//ekf-long-d.webp 1x">
+                <img  src="img/ekf-long-d.jpg" srcset="img/ekf-long-d@2x.jpg 2x" alt="фото главной страницы сайта ЭКФ" width="700" height="964">
+              </picture>
+
             </div>
-            <div class="details__list-item-info">
+            <div class="details__list-item-info details__list-item-info--down-ekf">
               <a href="http://экф-44.рф/">http://экф-44.рф</a>
-              <p>Местонахождение г.Кострома</p>
+              <p>Местонахождение: г.Кострома</p>
               <h4>Технические особенности сайта:</h4>
               <ul class="details__list-description">
                 <li>
@@ -148,13 +179,28 @@
           <li class="details__list-item">
             <div class="details__list-item-wrap">
               <h3 id="tour">3d-тур по музею "Костромской Дом Национальностей"</h3>
-              <img src="img/tour-1-d.png" srcset="img/tour-1-d@2x.png 2x" alt="фото главного зала музея" width="700" height="964">
-              <img src="img/tour-2-d.png" srcset="img/tour-2-d@2x.png 2x" alt="крупное фото национальных костюмов" width="700" height="964">
-              <img src="img/tour-3-d.png" srcset="img/tour-3-d@2x.png 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/tour-1-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-1-d.webp 1x">
+                <source type="image/webp" srcset="img/tour-1-d.webp 1x">
+                <img src="img/tour-1-d.png" srcset="img/tour-1-d@2x.png 2x" alt="фото главного зала музея" width="700" height="964">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/tour-2-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-2-d.webp 1x">
+                <source type="image/webp" srcset="img/tour-2-d.webp 1x">
+                <img src="img/tour-2-d.png" srcset="img/tour-2-d@2x.png 2x" alt="крупное фото национальных костюмов" width="700" height="964">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/tour-3-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-3-d.webp 1x">
+                <source type="image/webp" srcset="img/tour-3-d.webp 1x">
+                <img src="img/tour-3-d.png" srcset="img/tour-3-d@2x.png 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+              </picture>
             </div>
-            <div class="details__list-item-info">
+            <div class="details__list-item-info  details__list-item-info--down">
               <a href="http://tour.rvo-k.ru/museum_of_nations/">http://tour.rvo-k.ru</a>
-              <p>Местонахождение г.Кострома</p>
+              <p>Местонахождение: г.Кострома</p>
               <h4>Технические особенности 3d-тура:</h4>
               <ul class="details__list-description">
                 <li>
@@ -171,14 +217,23 @@
           <li class="details__list-item">
             <div class="details__list-item-wrap details__list-item-wrap--guide">
               <h3 id="guide">Мобильное приложение для музея "Костромской Дом Национальностей"</h3>
-              <img src="img/guide-1-d.jpg" srcset="img/guide-1-d@2x.jpg 2x" alt="фото главного зала музея" width="700" height="964">
-              <img src="img/guide-2-d.jpg" srcset="img/guide-2-d@2x.jpg 2x" alt="крупное фото национальных костюмов" width="350" height="964">
-              <img src="img/guide-3-d.jpg" srcset="img/guide-3-d@2x.jpg 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
-              <img src="img/guide-4-d.jpg" srcset="img/guide-4-d@2x.jpg 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/guide-1-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/guide-1-d.webp 1x">
+                <source type="image/webp" srcset="img/guide-1-d.webp 1x">
+                <img src="img/guide-1-d.jpg" srcset="img/guide-1-d@2x.jpg 2x" alt="фото мобильного приложения" width="700" height="964">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/guide-3-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/guide-3-d.webp 1x">
+                <source type="image/webp" srcset="img/guide-3-d.webp 1x">
+                <img src="img/guide-3-d.jpg" srcset="img/guide-3-d@2x.jpg 2x" alt="фото  мобильного приложения" width="700" height="964">
+              </picture>
+
             </div>
-            <div class="details__list-item-info details__list-item-info--guide ">
+            <div class="details__list-item-info details__list-item-info--guide details__list-item-info--down-mob">
               <a href="https://play.google.com/store/apps/details?id=com.rvo.museumskostroma">https://play.google.com</a>
-              <p>Местонахождение г.Кострома</p>
+              <p>Местонахождение: г.Кострома</p>
               <h4>Технические особенности приложения:</h4>
               <ul class="details__list-description">
                 <li>
@@ -195,14 +250,29 @@
           <li class="details__list-item">
             <div class="details__list-item-wrap">
               <h3 id="palace">3d-тур по ГБУ «Дворец творчества»</h3>
-              <img src="img/dt-2-d.png" srcset="img/dt-2-d@2x.png 2x" alt="фото главного зала музея" width="700" height="964">
-              <img src="img/dt-3-d.png" srcset="img/dt-3-d@2x.png 2x" alt="крупное фото национальных костюмов" width="700" height="964">
-              <img src="img/dt-4-d.png" srcset="img/4-d@2x.png 2x" alt="фото национальных костюмов Грузии" width="700" height="964">
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/dt-2-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/dt-2-d.webp 1x">
+                <source type="image/webp" srcset="img/dt-2-d.webp 1x">
+                <img src="img/dt-2-d.png" srcset="img/dt-2-d@2x.png 2x" alt="фото главного зала с колоннами и женским костюмом" width="700" height="964">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/dt-3-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/dt-3-d.webp 1x">
+                <source type="image/webp" srcset="img/dt-3-d.webp 1x">
+                <img src="img/dt-3-d.png" srcset="img/dt-3-d@2x.png 2x" alt="фото концертного зала" width="700" height="964">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/dt-4-d.webp 1x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/dt-4-d.webp 1x">
+                <source type="image/webp" srcset="img/dt-4-d.webp 1x">
+                <img src="img/dt-4-d.png" srcset="img/4-d@2x.png 2x" alt="фото главного зала с колоннами и костюмом пионера" width="700" height="964">
+              </picture>
             </div>
             <div class="details__list-item-info">
               <a href="http://kodtdim.ru/">http://kodtdim.ru</a>
-              <p>Местонахождение г.Кострома</p>
-              <h4>Технические особенности 3d-тура:</h4>
+              <p>Местонахождение: г.Кострома</p>
+              <h4>Технические особенности<br> 3d-тура:</h4>
               <ul class="details__list-description">
                 <li>
                   <p>переход на любой слайд</p>
@@ -245,8 +315,8 @@
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
-      <p>©РВО-Софт 2022</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2128.536901154727!2d40.99581051575927!3d57.758287081136956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ad4e337401ebdd%3A0xfbc15c825d8f6280!2z0YPQuy4g0J_QtdGC0YDQsCDQqdC10YDQsdC40L3RiywgOSwg0JrQvtGB0YLRgNC-0LzQsCwg0JrQvtGB0YLRgNC-0LzRgdC60LDRjyDQvtCx0LsuLCAxNTYwMTk!5e0!3m2!1sru!2sru!4v1670149025210!5m2!1sru!2sru" width="100%" height="279" style="border:0;" allowfullscreen=""  title="г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p>©ООО "РВО софт" 2022</p>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUrQRwdkA" width="100%" height="279" frameborder="0" allowfullscreen="true" title="г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
     <script src="js/vendor.min.js"></script>

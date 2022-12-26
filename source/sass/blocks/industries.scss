@@ -1,6 +1,14 @@
 .industries {
   background-color: $color-bg-blue;
   margin-bottom: 150px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .industries h3 {
@@ -10,11 +18,34 @@
   padding-top: 180px;
   padding-bottom: 20px;
   margin: 0;
+
+  @media (max-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 28px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 60px;
+    font-size: 24px;
+    line-height: 26px;
+  }
 }
 
 .industries h3 + p {
   font-size: 30px;
   line-height: 45px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 36px;
+  }
 }
 
 .industries__list {
@@ -23,6 +54,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 120px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
 }
 
 .industries__list li {
@@ -36,12 +76,41 @@
   padding-right: 15px;
   border-bottom: 1px solid $color-hover;
 
+  @media (max-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 36px;
+    padding-right: 10px;
+    padding-left: 66px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 26px;
+    padding-right: 5px;
+    padding-left: 34px;
+    width: 100%;
+  }
+
   &:nth-child(odd) {
     border-right: 1px solid $color-hover;
+
+    @media (max-width: $tablet-width) {
+      border-right: none;
+    }
   }
 
   &:nth-last-child(-n+2) {
     border-bottom: none;
+
+    @media (max-width: $tablet-width) {
+      border-bottom: 1px solid $color-hover;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -53,4 +122,17 @@
   top: 37px;
   left: 19px;
   background: url("../img/svg/checkbox.svg") no-repeat center bottom;
+
+  @media (max-width: $desktop-width) {
+    width: 30px;
+    height: 30px;
+    top: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    top: 21px;
+    left: 4px;
+  }
 }

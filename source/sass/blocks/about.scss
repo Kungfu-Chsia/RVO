@@ -1,11 +1,23 @@
 .about {
-  margin-top: 125px;
+  margin-top: 160px;
   background-color: $color-bg-blue;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .about__wrap {
   padding-bottom: 30px;
   position: relative;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .about h3 {
@@ -14,6 +26,18 @@
   text-transform: uppercase;
   margin-top: 0;
   padding-top: 60px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 28px;
+    padding-top: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 35px;
+  }
 }
 
 .about p {
@@ -24,19 +48,57 @@
   color: $color-dark-teal;
   width: 86%;
 
-  &:nth-last-child(-n+3) {
+  @media (max-width: $desktop-width) {
+    font-size: 23px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &:nth-last-child(-n+2) {
     width: 50%;
     position: relative;
+    text-align: start;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+
+    &:nth-last-child(-n+2) {
+      width: 100%;
+      position: relative;
+      text-align: justify;
+    }
+
+    &:last-child {
+      margin-top: 250px;
+    }
   }
 }
 
 .about p:last-child::after {
   content: "";
   position: absolute;
-  background: url("../img/web-development.png") no-repeat center center;
+  background: url("../img/svg/web-development.svg") no-repeat center center;
   width: 512px;
   height: 512px;
   right: -333px;
   transform: translate(50%);
-  bottom: 81px;
+  bottom: 0;
+
+  @media (max-width: $desktop-width) {
+    width: 300px;
+    height: 300px;
+    right: -198px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    right: 118px;
+    bottom: 104%;
+  }
 }

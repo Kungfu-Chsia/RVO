@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import './modules/scroll';
+import './modules/burger.js';
 import initSwiper from './modules/swiper';
 
 // ---------------------------------

@@ -1,11 +1,21 @@
 .promo {
   min-height: 927px;
-  background-image: url("../img/programming.png");
+  background-image: url("../img/programming.jpg");
   background-position: bottom;
   background-color: $color-dark-teal;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  @media (max-width: $desktop-width) {
+    min-height: 740px;
+    background-image: url("../img/programming-t.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 505px;
+    background-image: url("../img/programming-m.jpg");
+  }
 }
 
 .promo__wrap h2 {
@@ -17,7 +27,23 @@
   text-shadow: 11px 6px 5px rgb(0, 15, 22);
   width: 50%;
   position: absolute;
-  top: 22%;
+  top: 31%;
+
+  @media (max-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 56px;
+    width: 42%;
+  }
+
+  @media (max-width: 908px) {
+    width: 90%;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 46px;
+    top: 27%;
+  }
 
   &::before {
     content: "";
@@ -34,7 +60,22 @@
   line-height: 46px;
   color: $color-light-blue;
   position: absolute;
-  top: 42%;
+  top: 49%;
   width: 50%;
   text-shadow: 9px 7px 3px #000f16;
+
+  @media (max-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 849px) {
+    width: 59%;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 36px;
+    top: 47%;
+  }
 }

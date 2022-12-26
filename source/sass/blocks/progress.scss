@@ -4,6 +4,7 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 70px;
+  padding-top: 40px;
 }
 
 .progress__foto {
@@ -15,7 +16,24 @@
 }
 
 .progress__foto img {
-  width: 47%;
+  width: 100%;
   box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.35);
   border-radius: 10px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+
+.progress__foto picture {
+  width: 46%;
+
+  @media (max-width: 939px) {
+    width: 44%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }

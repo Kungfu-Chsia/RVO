@@ -1,5 +1,13 @@
 .contacts {
-  margin-top: 125px;
+  margin-top: 160px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 135px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .contacts h3 {
@@ -8,6 +16,17 @@
   text-transform: uppercase;
   margin-top: 0;
   padding-top: 60px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 30px;
+  }
 }
 
 .contacts p,
@@ -17,10 +36,28 @@
   text-align: justify;
   letter-spacing: 0.8px;
   color: $color-dark-teal;
+
+  @media (max-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .contacts h3 ~ p {
   margin-bottom: 55px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts p + p {
@@ -28,20 +65,16 @@
 }
 
 .contacts__wrap {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
   position: relative;
   margin-bottom: 205px;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 181px;
-  //   height: 4px;
-  //   left: 0;
-  //   background-color: $color-accent-orange;
-  // }
+  @media (max-width: $desktop-width) {
+    margin-bottom: 160px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 130px;
+  }
 }
 
 .contacts__data-wrap {
@@ -50,9 +83,21 @@
   display: flex;
   flex-direction: column;
   left: 95px;
-  top: 197px;
-  padding: 20px 40px 40px;
+  top: 142px;
+  padding: 20px 50px 60px;
   border: 3px solid $color-accent-orange;
+
+  @media (max-width: $desktop-width) {
+    padding: 15px 30px 35px;
+    left: 70px;
+    top: 189px;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 10px;
+    top: 276px;
+    padding: 10px 15px 25px;
+  }
 }
 
 .contacts__data {
@@ -70,6 +115,16 @@
   color: #006363;
   text-transform: uppercase;
   margin-bottom: 0;
+
+  @media (max-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .contacts__wrap iframe {

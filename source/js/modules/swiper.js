@@ -18,39 +18,63 @@ const initSwiper = function () {
         // Количество слайдов на странице
         slidesPerView: 1,
         // порядковый номер первого слайда
-        initialSlide: 1,
+        initialSlide: 0,
       },
       768: {
         slidesPerView: 2,
         // Отступ между слайдами
-        spaceBetween: 30,
+        // spaceBetween: 30,
         initialSlide: 1,
       },
       1200: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        // spaceBetween: 30,
         initialSlide: 1,
       },
       1366: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        // spaceBetween: 40,
         initialSlide: 1,
       },
     },
   });
 
-  // const swiperFeedback = new Swiper('.feedback__swiper', {
+  const swiperTeam = new Swiper('.team__swiper', {
 
-  //   navigation: {
-  //     prevEl: '.feedback__button-prev',
-  //     nextEl: '.feedback__button-next',
-  //   },
+    navigation: {
+      prevEl: '.team__button-prev',
+      nextEl: '.team__button-next',
+    },
 
-  //   loop: false,
-  //   simulateTouch: false,
-  //   slidesPerView: 1,
+    loop: false,
+    simulateTouch: false,
+    slidesPerView: 4,
 
-  // });
+    breakpoints: {
+      320: {
+        // Количество слайдов на странице
+        slidesPerView: 1,
+        // порядковый номер первого слайда
+        initialSlide: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        // Отступ между слайдами
+        // spaceBetween: 30,
+        initialSlide: 1,
+      },
+      1200: {
+        slidesPerView: 3,
+        // spaceBetween: 40,
+        initialSlide: 1,
+      },
+      1366: {
+        slidesPerView: 4,
+        // spaceBetween: 40,
+        initialSlide: 1,
+      },
+    },
+  });
 
   const imageSlider = document.querySelector('.swiper').swiper;
   const clientsButtonPrev = document.querySelector('.clients__button-prev');
@@ -66,59 +90,15 @@ const initSwiper = function () {
     swiperSlide.tabIndex = '0';
   });
 
-  // gamesBtn.addEventListener('keydown', function (evt) {
-  //   if (!evt.shiftKey && evt.key === 'Tab') {
-  //     evt.preventDefault();
-  //     clientsButtonPrev.focus();
-  //     console.log('gamesBtn',clientsButtonPrev);
-  //   }
-  // });
-
-
-  // clientsButtonPrev.addEventListener('keydown', function (evt) {
-  //   if (evt.shiftKey && evt.key === 'Tab') {
-  //     evt.preventDefault();
-  //     gamesBtn.focus();
-  //     console.log('clientsButtonPrev',gamesBtn);
-  //   }
-  // });
-
-
   clientsButtonNext.addEventListener('click', function (evt) {
     if (imageSlider.isEnd) {
-     //  console.log("сработал end", imageSlider.isEnd);
+    //  console.log("сработал end", imageSlider.isEnd);
     //  evt.preventDefault();
-      //firstSlide.focus();
+    //firstSlide.focus();
     // imageSlider.slideTo(firstSlide.index, 800);
-      console.log('clientsButtonNext',imageSlider);
+
     }
   });
-
-
-  // firstSlide.addEventListener('keydown', function (evt) {
-  //   if (evt.shiftKey && evt.key === 'Tab') {
-  //     evt.preventDefault();
-  //     clientsButtonNext.focus();
-  //     console.log('firstSlide',clientsButtonNext);
-  //   }
-  // });
-
-
-  // lastSlide.addEventListener('keydown', function (evt) {
-  //   if (!evt.shiftKey && evt.key === 'Tab') {
-  //     evt.preventDefault();
-  //     lastSlide.focus();
-  //     console.log('lastSlide',lastSlide);
-  //   }
-
-  //   // promoButton.addEventListener('keydown', function (event) {
-  //   //   if (event.shiftKey && event.key === 'Tab') {
-  //   //     event.preventDefault();
-  //   //     lastSlide.focus();
-  //   //     console.log('promoButton',lastSlide);
-  //   //   }
-  //   // });
-  // });
 
 };
 

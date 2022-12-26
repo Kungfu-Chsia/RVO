@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="РВО-Софт - IT-поддержка вашего бизнеса">
-    <title>РВО-Софт</title>
+    <meta name="description" content="РВО софт - IT-поддержка вашего бизнеса">
+    <title>РВО софт</title>
     <link rel="preload" href="fonts/Tahoma-Regular.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/Tahoma-Bold.woff2" as="font" crossorigin>
     <link rel="icon" href="favicon.ico">
@@ -15,49 +15,56 @@
   </head>
 
   <body>
-    <header class="page-header page-header--static">
-      <div class="container page-header__wrapper">
-        <nav class="page-header__nav">
-          <a href="index.html" class="page-header__logo" aria-label="logo">
-            <svg class="page-header__icon-logo" width="90" height="90">
-              <use xlink:href="img/sprite/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a href="about.html">О компании</a>
+    <header class="page-header page-header--static page-header--closed">
+      <div class="page-header__wrap">
+        <div class="container page-header__wrapper">
+          <nav class="page-header__nav main-nav ">
+            <a href="index.html" class="page-header__logo" aria-label="logo">
+              <svg class="page-header__icon-logo" width="120" height="120">
+                <use xlink:href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="page-header__toggle main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a href="about.html">О компании</a>
+              </li>
+              <li class="page-header__item">
+                <a href="services.html">Услуги</a>
+              </li>
+              <li class="page-header__item">
+                <a href="cases.html">Портфолио</a>
+              </li>
+              <li class="page-header__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-header__list-contacts">
+            <li>
+              <a class="page-header__phone" href="tel:84942461482" aria-label="телефон РВО софт">8 (4942) 46-14-82</a>
             </li>
-            <li class="page-header__item">
-              <a href="services.html">Услуги</a>
-            </li>
-            <li class="page-header__item">
-              <a href="cases.html">Портфолио</a>
-            </li>
-            <li class="page-header__item">
-              <a href="contacts.html">Контакты</a>
+            <li>
+              <a class="page-header__phone" href="tel:84942420182" aria-label="телефон РВО софт">8 (4942) 42-01-82</a>
             </li>
           </ul>
-        </nav>
-        <ul class="page-header__list-contacts">
-          <li>
-            <a class="page-header__phone" href="tel:84942461482" aria-label="телефон РВО-Софт">8 (4942) 46-14-82</a>
-          </li>
-          <li>
-            <a class="page-header__phone" href="tel:84942420182" aria-label="телефон РВО-Софт">8 (4942) 42-01-82</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
+
 
     <main>
       <section class="services-about services-about--static container">
         <h3>Подробнее о наших услугах</h3>
         <ul class="services-about__nav">
-          <li href="#comps" class="services-about__nav-item js-trigger">
-            <p>обслуживание компьютеров</p>
+          <li class="services-about__nav-item ">
+            <a href="#comps" class="js-trigger"><p>обслуживание компьютеров</p>
+
             <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
+          </a>
           </li>
           <li href="#servers" class="services-about__nav-item js-trigger">
             <p>обслуживание серверов</p>
@@ -84,7 +91,7 @@
             </svg>
           </li>
           <li href="#tour" class="services-about__nav-item js-trigger">
-            <p>виртуальный 3d-тур</p>
+            <p>создание виртуальных<br> 3d-туров</p>
             <svg width="130" height="120">
               <use xlink:href="img/sprite/sprite.svg#arrow"></use>
             </svg>
@@ -110,8 +117,7 @@
             <p>Антивирусная защита.</p>
             <p>Резервное копирование данных.</p>
             <p>Безопасность и сохранность данных.</p>
-            <p>Настройка восстановления системы.</p>
-            <p>Мониторинг всех компьютеров.</p>
+            <p>Мониторинг аппаратного и программного обеспечения.</p>
             <p>Профилактическое обслуживание: установка обновлений, настройка систем. Ежемесячная отчетность</p>
           </li>
           <li id="servers" class="services-about__list-item">
@@ -146,30 +152,30 @@
               <use xlink:href="img/sprite/sprite.svg#progr"></use>
             </svg>
             <h4>разработка сайтов</h4>
-            <p>Лендинг</p>
-            <p>Сайты с уникальным дизайном .</p>
+            <p>Одностраничные сайты.</p>
+            <p>Сайты с уникальным дизайном.</p>
             <p>Сайты на основе шаблона.</p>
             <p>Корпоративные сайты.</p>
           </li>
           <li id="mob" class="services-about__list-item">
-            <svg class="services-about__list-item__icon-logo services-about__list-item__icon-logo--down" width="120" height="120">
+            <svg class="services-about__list-item__icon-logo services-about__list-item__icon-logo--down services-about__list-item__icon-logo--upper" width="120" height="120">
               <use xlink:href="img/sprite/sprite.svg#mobile"></use>
             </svg>
             <h4>разработка мобильных приложений (аудиогид)</h4>
-            <p>Подготовительный этап. Проектирование, разработка технического задания.</p>
+            <p>Проектирование, разработка технического задания.</p>
             <p>Дизайн. Разработка интерфейса мобильного приложения и графических элементов.</p>
-            <p>Подготовка к разработке. Подбор и начальная настройка необходимых компонентов будущего приложения.</p>
+            <p>Подбор и начальная настройка необходимых компонентов будущего приложения.</p>
             <p>MVP версия. Минимально жизнеспособная версия проекта, для внутреннего тестирования.</p>
-            <p>Разработка. Реализация полноценной версии проекта, отладка, тестирование.</p>
-            <p>Публикация. Размещение приложения в магазинах App Store и Google Play.</p>
+            <p>Реализация полноценной версии проекта, отладка, тестирование.</p>
+            <p>Размещение приложения в магазинах App Store и Google Play.</p>
           </li>
           <li id="tour" class="services-about__list-item">
             <svg class="services-about__list-item__icon-logo" width="120" height="120">
               <use xlink:href="img/sprite/sprite.svg#3d"></use>
             </svg>
-            <h4>виртуальный 3d-тур</h4>
+            <h4>создание виртуальных<br/> 3d-туров</h4>
             <p>3D-тур полезно дополняет сайт, создаёт эффект присутствия, предоставляет возможность показать интерьеры вашего бизнеса, что делает
-              ваше заведение более красочным, привлекательным и интересным.</p>
+              ваше заведение (объект) более красочным, привлекательным и интересным.</p>
             <p>Виртуальный тур работает на любом устройстве (на экранах компьютера, планшета, мобильного телефона).</p>
           </li>
           <li id="1s" class="services-about__list-item">
@@ -204,8 +210,8 @@
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
-      <p>©РВО-Софт 2022</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2128.536901154727!2d40.99581051575927!3d57.758287081136956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ad4e337401ebdd%3A0xfbc15c825d8f6280!2z0YPQuy4g0J_QtdGC0YDQsCDQqdC10YDQsdC40L3RiywgOSwg0JrQvtGB0YLRgNC-0LzQsCwg0JrQvtGB0YLRgNC-0LzRgdC60LDRjyDQvtCx0LsuLCAxNTYwMTk!5e0!3m2!1sru!2sru!4v1670149025210!5m2!1sru!2sru" width="100%" height="279" style="border:0;" allowfullscreen=""  title="г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p>©ООО "РВО софт" 2022</p>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUrQRwdkA" width="100%" height="279" frameborder="0" allowfullscreen="true" title="г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
     <script src="js/vendor.min.js"></script>

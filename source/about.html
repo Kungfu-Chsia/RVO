@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="РВО-Софт - IT-поддержка вашего бизнеса">
-    <title>РВО-Софт</title>
+    <meta name="description" content="РВО софт - IT-поддержка вашего бизнеса">
+    <title>РВО софт</title>
     <link rel="preload" href="fonts/Tahoma-Regular.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/Tahoma-Bold.woff2" as="font" crossorigin>
     <link rel="icon" href="favicon.ico">
@@ -15,37 +15,41 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container page-header__wrapper">
-        <nav class="page-header__nav">
-          <a href="index.html" class="page-header__logo" aria-label="logo">
-            <svg class="page-header__icon-logo" width="90" height="90">
-              <use xlink:href="img/sprite/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a href="about.html">О компании</a>
+    <header class="page-header page-header--closed">
+      <div class="page-header__wrap">
+        <div class="container page-header__wrapper">
+          <nav class="page-header__nav main-nav ">
+            <a href="index.html" class="page-header__logo" aria-label="logo">
+              <svg class="page-header__icon-logo" width="120" height="120">
+                <use xlink:href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="page-header__toggle main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a href="about.html">О компании</a>
+              </li>
+              <li class="page-header__item">
+                <a href="services.html">Услуги</a>
+              </li>
+              <li class="page-header__item">
+                <a href="cases.html">Портфолио</a>
+              </li>
+              <li class="page-header__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-header__list-contacts">
+            <li>
+              <a class="page-header__phone" href="tel:84942461482" aria-label="телефон РВО софт">8 (4942) 46-14-82</a>
             </li>
-            <li class="page-header__item">
-              <a href="services.html">Услуги</a>
-            </li>
-            <li class="page-header__item">
-              <a href="cases.html">Портфолио</a>
-            </li>
-            <li class="page-header__item">
-              <a href="contacts.html">Контакты</a>
+            <li>
+              <a class="page-header__phone" href="tel:84942420182" aria-label="телефон РВО софт">8 (4942) 42-01-82</a>
             </li>
           </ul>
-        </nav>
-        <ul class="page-header__list-contacts">
-          <li>
-            <a class="page-header__phone" href="tel:84942461482" aria-label="телефон РВО-Софт">8 (4942) 46-14-82</a>
-          </li>
-          <li>
-            <a class="page-header__phone" href="tel:84942420182" aria-label="телефон РВО-Софт">8 (4942) 42-01-82</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -54,40 +58,110 @@
         <div class="container about__wrap">
           <h3>О нас</h3>
           <p>Костромская IT-компания «РВО софт» с 2005 года работает в сфере информационных технологий, разработок программного обеспечения, сайтов и мобильных приложений, системного администрирования, создания 3D-туров.</p>
-          <p>Опыт, умения и знания выросли в особый подход и помощь каждому клиенту в решении любых вопросов, связанных с программным обеспечением.</p>
-          <p> Мы работаем с юридическими и физическими лицами. К исполнению берем как небольшие проекты и задачи, так и крупные информационные системы для предприятий. В ходе реализации проекта наши специалисты на каждом этапе информируют заказчиков о результатах работы.</p>
-          <p>Разработкой программного обеспечения занимаются высококвалифицированные программисты, способные писать программы качественно и в короткие сроки.</p>
-          <p>Узнать любую информацию о наших программных и иных продуктах, Вы сможете, позвонив по телефонам: +7(4942) 46-14-82, +7(4942) 42-01-82, или же напишите обращение на адрес электронной почты: <a href="mailto:edu@rvo-k.ru">edu@rvo-k.ru</a>. Будем рады помочь вам!</p>
+          <p>Опыт, умения и&nbsp;знания выросли в&nbsp;особый подход и&nbsp;помощь каждому клиенту в&nbsp;решении любых вопросов, связанных с&nbsp;программным обеспечением.</p>
+          <p> Мы работаем с компаниями, осуществляющими предоставление услуг потребителям в различных сферах жизнедеятельности. К исполнению берем как небольшие проекты и задачи, так и крупные информационные системы для предприятий. В ходе реализации проектов наши специалисты на каждом этапе информируют заказчиков о результатах работы.</p>
+          <p>Узнать любую информацию о наших программных и иных продуктах, Вы сможете, позвонив по телефонам: +7(4942)46-14-82, +7(4942)42-01-82. Будем рады помочь вам!</p>
         </div>
       </section>
+
       <section class="team container">
         <h3>Наша команда</h3>
         <div class="team__swiper swiper image-slider">
-          <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+          <div class="team-slider__wrapper  swiper-wrapper ">
             <div class="team__swiper-slide image-slider__slide swiper-slide" tabindex="0">
               <div class="team__card">
-                <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" srcset="img/foto.webp 1x">
+                  <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                </picture>
+                <h4>ФИО</h4>
+                <p>должность</p>
               </div>
             </div>
           </div>
-          <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+          <div class="team-slider__wrapper  swiper-wrapper ">
             <div class="team__swiper-slide image-slider__slide swiper-slide" tabindex="0">
               <div class="team__card">
-                <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" srcset="img/foto.webp 1x">
+                  <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                </picture>
+                <h4>ФИО</h4>
+                <p>должность</p>
               </div>
             </div>
           </div>
-          <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+          <div class="team-slider__wrapper swiper-wrapper ">
             <div class="team__swiper-slide image-slider__slide swiper-slide" tabindex="0">
               <div class="team__card">
-                <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" srcset="img/foto.webp 1x">
+                  <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                </picture>
+                <h4>ФИО</h4>
+                <p>должность</p>
               </div>
             </div>
           </div>
-          <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+          <div class="team-slider__wrapper swiper-wrapper ">
             <div class="team__swiper-slide image-slider__slide swiper-slide" tabindex="0">
               <div class="team__card">
-                <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" srcset="img/foto.webp 1x">
+                  <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                </picture>
+                <h4>ФИО</h4>
+                <p>должность</p>
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__wrapper swiper-wrapper ">
+            <div class="team__swiper-slide image-slider__slide swiper-slide" tabindex="0">
+              <div class="team__card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" srcset="img/foto.webp 1x">
+                  <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                </picture>
+                <h4>ФИО</h4>
+                <p>должность</p>
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__wrapper  swiper-wrapper ">
+            <div class="team__swiper-slide image-slider__slide swiper-slide" tabindex="0">
+              <div class="team__card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" srcset="img/foto.webp 1x">
+                  <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                </picture>
+                <h4>ФИО</h4>
+                <p>должность</p>
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__wrapper swiper-wrapper ">
+            <div class="team__swiper-slide image-slider__slide swiper-slide" tabindex="0">
+              <div class="team__card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/foto.webp 1x">
+                  <source type="image/webp" srcset="img/foto.webp 1x">
+                  <img src="img/foto.png" srcset="img/foto@2x.png 2x" alt="фото сотрудника" width="150" height="150">
+                </picture>
+                <h4>ФИО</h4>
+                <p>должность</p>
               </div>
             </div>
           </div>
@@ -95,18 +169,26 @@
         <button class="team__button team__button-prev swiper-button-prev"></button>
         <button class="team__button team__button-next swiper-button-next"></button>
       </section>
+
       <section class="progress">
         <div class="container">
           <h3>Наши достижения</h3>
           <div class="progress__foto">
-            <img  src="img/knd-d.jpg" srcset="img/knd-d@2x.jpg 2x" alt="фото письма-благодарности КНД" width="700" height="964">
-            <img  src="img/museum-d.jpg" srcset="img/museum-d@2x.jpg 2x" alt="фото письма-благодарности музея-заповедника" width="700" height="964">
-            <img  src="img/knd-d.jpg" srcset="img/knd-d@2x.jpg 2x" alt="фото главной страницы сайта ЭКФ" width="700" height="964">
-            <img  src="img/knd-d.jpg" srcset="img/knd-d@2x.jpg 2x" alt="фото главной страницы сайта ЭКФ" width="700" height="964">
+            <picture>
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/museum-d.webp 1x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/museum-d.webp 1x">
+              <source type="image/webp" srcset="img/museum-d.webp 1x">
+              <img  src="img/museum-d.jpg" srcset="img/museum-d@2x.jpg 2x" alt="фото письма-благодарности музея-заповедника" width="700" height="964">
+            </picture>
+
+            <picture>
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/knd-d.webp 1x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/knd-d.webp 1x">
+              <source type="image/webp" srcset="img/knd-d.webp 1x">
+              <img  src="img/knd-d.jpg" srcset="img/knd-d@2x.jpg 2x" alt="фото письма-благодарности КНД" width="700" height="964">
+            </picture>
           </div>
         </div>
-
-
       </section>
     </main>
 
@@ -131,8 +213,8 @@
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
-      <p>©РВО-Софт 2022</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2128.536901154727!2d40.99581051575927!3d57.758287081136956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ad4e337401ebdd%3A0xfbc15c825d8f6280!2z0YPQuy4g0J_QtdGC0YDQsCDQqdC10YDQsdC40L3RiywgOSwg0JrQvtGB0YLRgNC-0LzQsCwg0JrQvtGB0YLRgNC-0LzRgdC60LDRjyDQvtCx0LsuLCAxNTYwMTk!5e0!3m2!1sru!2sru!4v1670149025210!5m2!1sru!2sru" width="100%" height="279" style="border:0;" allowfullscreen=""  title="г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p>©ООО "РВО софт" 2022</p>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUrQRwdkA" width="100%" height="279" frameborder="0" allowfullscreen="true" title="г. Кострома, ул. Петра Щербины, 9Д" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
     <script src="js/vendor.min.js"></script>
